@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/elmar/Playground.Cpp/GettingStartedWithCMake/src/helloWorld.c
+stdio.h
+/Users/elmar/Playground.Cpp/GettingStartedWithCMake/src/stdio.h
+stdlib.h
+/Users/elmar/Playground.Cpp/GettingStartedWithCMake/src/stdlib.h
+
