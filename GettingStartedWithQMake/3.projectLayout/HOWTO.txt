@@ -1,2 +1,4 @@
 qmake -spec macx-g++
-make
+make debug
+make release
+make  
