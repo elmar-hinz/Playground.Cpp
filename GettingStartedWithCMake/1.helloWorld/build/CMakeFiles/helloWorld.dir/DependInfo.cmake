@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/Users/elmar/Playground.Cpp/GettingStartedWithCMake/src/helloWorld.c" "/Users/elmar/Playground.Cpp/GettingStartedWithCMake/build/CMakeFiles/helloWorld.dir/src/helloWorld.c.o"
+  "/Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/src/helloWorld.c" "/Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/build/CMakeFiles/helloWorld.dir/src/helloWorld.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "Clang")
 

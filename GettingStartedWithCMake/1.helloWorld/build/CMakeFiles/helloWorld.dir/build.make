@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.10.2/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/elmar/Playground.Cpp/GettingStartedWithCMake
+CMAKE_SOURCE_DIR = /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/elmar/Playground.Cpp/GettingStartedWithCMake/build
+CMAKE_BINARY_DIR = /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/helloWorld.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/helloWorld.dir/flags.make
 
 CMakeFiles/helloWorld.dir/src/helloWorld.c.o: CMakeFiles/helloWorld.dir/flags.make
 CMakeFiles/helloWorld.dir/src/helloWorld.c.o: ../src/helloWorld.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/elmar/Playground.Cpp/GettingStartedWithCMake/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/helloWorld.dir/src/helloWorld.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/helloWorld.dir/src/helloWorld.c.o   -c /Users/elmar/Playground.Cpp/GettingStartedWithCMake/src/helloWorld.c
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/helloWorld.dir/src/helloWorld.c.o   -c /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/src/helloWorld.c
 
 CMakeFiles/helloWorld.dir/src/helloWorld.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/helloWorld.dir/src/helloWorld.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/elmar/Playground.Cpp/GettingStartedWithCMake/src/helloWorld.c > CMakeFiles/helloWorld.dir/src/helloWorld.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/src/helloWorld.c > CMakeFiles/helloWorld.dir/src/helloWorld.c.i
 
 CMakeFiles/helloWorld.dir/src/helloWorld.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/helloWorld.dir/src/helloWorld.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/elmar/Playground.Cpp/GettingStartedWithCMake/src/helloWorld.c -o CMakeFiles/helloWorld.dir/src/helloWorld.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/src/helloWorld.c -o CMakeFiles/helloWorld.dir/src/helloWorld.c.s
 
 CMakeFiles/helloWorld.dir/src/helloWorld.c.o.requires:
 .PHONY : CMakeFiles/helloWorld.dir/src/helloWorld.c.o.requires
@@ -100,6 +100,6 @@ CMakeFiles/helloWorld.dir/clean:
 .PHONY : CMakeFiles/helloWorld.dir/clean
 
 CMakeFiles/helloWorld.dir/depend:
-	cd /Users/elmar/Playground.Cpp/GettingStartedWithCMake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/elmar/Playground.Cpp/GettingStartedWithCMake /Users/elmar/Playground.Cpp/GettingStartedWithCMake /Users/elmar/Playground.Cpp/GettingStartedWithCMake/build /Users/elmar/Playground.Cpp/GettingStartedWithCMake/build /Users/elmar/Playground.Cpp/GettingStartedWithCMake/build/CMakeFiles/helloWorld.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/build /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/build /Users/elmar/Playground.Cpp/GettingStartedWithCMake/1.helloWorld/build/CMakeFiles/helloWorld.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/helloWorld.dir/depend
 

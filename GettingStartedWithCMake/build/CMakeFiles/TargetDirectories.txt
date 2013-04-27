@@ -1,1 +1,0 @@
-/Users/elmar/Playground.Cpp/GettingStartedWithCMake/build/CMakeFiles/helloWorld.dir
