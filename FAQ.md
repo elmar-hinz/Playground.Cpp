@@ -1,6 +1,5 @@
-
-What is the difference between a static and shared libraries?
-=============================================================
+What is the difference between static and shared libraries?
+===========================================================
 
 Shared libraries are .so (or in Windows .dll, or in OS X .dylib) files. All the code relating to the library is in this file, and it is referenced by programs using it at run-time. A program using a shared library only makes reference to the code that it uses in the shared library.
 
