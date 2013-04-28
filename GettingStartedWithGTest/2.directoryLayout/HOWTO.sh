@@ -5,7 +5,7 @@ cd ./build
 cmake ..
 make
 cd ..
-./build/unittests
+./build/sampleTest
 rm -rf ./build
 
 

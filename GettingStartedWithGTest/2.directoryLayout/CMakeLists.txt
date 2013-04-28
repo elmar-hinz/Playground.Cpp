@@ -11,5 +11,5 @@ enable_testing(true)
 # Hello
 ################################################################################
 include_directories(./include ${gtest_SOURCE_DIR}/include)
-cxx_executable(unittests tests gtest_main src/sample.cc)
+cxx_executable(sampleTest tests/unit gtest_main src/sample.cc)
 
