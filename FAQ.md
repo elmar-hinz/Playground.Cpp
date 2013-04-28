@@ -1,6 +1,6 @@
 
-GCSD -dynamic, -dynamiclib, -dylib
-##################################
+What is the difference between -dynamic, -dynamiclib, -dylib for GCC
+#####################################################################
 
 -dynamic is a flag that both gcc and ld accept. gcc just passes it straight on to ld. It tells ld to build a dyanmically linked executable, as opposed to a statically linked one. It's turned on by default -- in fact, I don't think there's any official support for static executables on Darwin.
 
@@ -13,4 +13,11 @@ GCSD -dynamic, -dynamiclib, -dylib
 In other words, you should never have to use -dynamic. If you're building a dylib and using gcc to link (i.e. you're passing '-o lib<my_library>.dylib' to gcc), you'll use -dynamiclib. If you're building a dylib and using ld to link, you'll use -dylib.
 
 Source: Eric Albert, http://lists.apple.com/archives/xcode-users/2003/Dec/msg00395.html
+
+
+What is a Framework on Mac OS X?
+################################
+
+Frameworks are shared libraries that are packaged with associated resources, such as graphics files, developer documentation, and programming interfaces. 
+
 
