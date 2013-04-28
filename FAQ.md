@@ -1,6 +1,6 @@
 
-What is the difference between a static and shared libraries
-============================================================
+What is the difference between a static and shared libraries?
+=============================================================
 
 Shared libraries are .so (or in Windows .dll, or in OS X .dylib) files. All the code relating to the library is in this file, and it is referenced by programs using it at run-time. A program using a shared library only makes reference to the code that it uses in the shared library.
 
@@ -9,16 +9,14 @@ Static libraries are .a (or in Windows .lib) files. All the code relating to the
 Source: Pete Shanahan, http://stackoverflow.com/users/17833/petesh
 
 
-
 What is a Framework on Mac OS X?
 ================================
 
-Frameworks are shared libraries that are packaged with associated resources, such as graphics files, developer documentation, and programming interfaces. 
+Frameworks are shared libraries, that are packaged with associated resources, such as graphics files, developer documentation, and programming interfaces like header files into one directory structure. The directory structure may contain multiple versions of the library. 
 
 
-
-What is the difference between -dynamic, -dynamiclib, -dylib for GCC
-====================================================================
+What is the difference between -dynamic, -dynamiclib, -dylib for GCC?
+=====================================================================
 
 -dynamic is a flag that both gcc and ld accept. gcc just passes it straight on to ld. It tells ld to build a dyanmically linked executable, as opposed to a statically linked one. It's turned on by default -- in fact, I don't think there's any official support for static executables on Darwin.
 
