@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/sample4_unittest.dir/samples/sample4_unittest.cc.o CMakeFiles/sample4_unittest.dir/samples/sample4.cc.o  -o sample4_unittest  -L/Users/elmar/Playground.Cpp/GettingStartedWithGTest/mybuild/src  libgtest_main.a libgtest.a 
