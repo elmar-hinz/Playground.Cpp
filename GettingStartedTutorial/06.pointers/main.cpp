@@ -8,6 +8,11 @@ void printNumbers(int*);
 void pointerAsArray();
 
 int main() {
+    char name1[] = "Roald";
+    char * name2 = "Amundson";
+    cout << name1 << " " << name2 << endl;
+    cout << "size of name1: " << sizeof(name1) << endl;
+    cout << "size of name2: " << sizeof(name2) << endl;
 	cout << "Assigning values by pointer" << endl;
 	assignByPointer();
 	cout << "Pointers and arrays " << endl;
@@ -30,13 +35,17 @@ void assignByPointer() {
 	cout << "Address of B => " << (long) mypointer << endl;
 	mypointer = &myvalueC;
 	cout << "Address of C => " << (long) mypointer << endl;
-	cout << "Expect A => " << myvalueA << endl; 
-	cout << "Expect B => " << myvalueB << endl; 
-	cout << "Unknonwn => " << myvalueC << endl; 
+	cout << "Expect A => " << myvalueA << endl;
+	cout << "Expect B => " << myvalueB << endl;
+	cout << "Unknonwn => " << myvalueC << endl;
 }
 
 void pointerAndArrays() {
 	int numbers[6] = {9, 8, 7};
+	cout << "numbers: " << (long) numbers << endl;
+	cout << "&numbers[0]: " << (long) &numbers[0] << endl;
+	cout << "&numbers[1]: " << (long) &numbers[1] << endl;
+	cout << "&numbers[2]: " << (long) &numbers[2] << endl;
 	int* p;
 	p = numbers;
 	cout << "Initially 9, 8, 7, UNKOWN, UNKNOWN" << endl;
@@ -58,13 +67,11 @@ void printNumbers(int* numbers) {
 }
 
 void pointerAsArray() {
-	char* hello = "Hello!";
+	char* hello = "Hello";
 	for(int x = 0; x < 7; x++) { cout << "Value " << (int) x << ": " << hello[x] << endl; }
-	char* oops = "Oooops, lost contact to Hello!";
+	cout << "Last pointer to 'Hello' lost. Pointer gets new target." << endl;
+	char* oops = "NEW";
 	hello = oops;
-	for(int x = 0; x < 31; x++) { cout << "Value " << (int) x << ": " << hello[x] << endl; }
+	for(int x = 0; x < 5; x++) { cout << "Value " << (int) x << ": " << hello[x] << endl; }
 }
-
-
-
 

@@ -3,7 +3,7 @@
 using namespace std;
 
 void fillArray(char*, char, char, char);
-void printArray(char[]);
+void printArray(char*);
 
 int main() {
 	char field[3];
@@ -11,9 +11,9 @@ int main() {
 	printArray(field);
 	char word[] = "Ho!";
 	printArray(word);
-	printArray((char*) "Hey"); 
-	printArray((char*) "OH"); 
-	printArray((char*) "U"); 
+	printArray((char*) "Hey");
+	printArray((char*) "OH");
+	printArray((char*) "U");
 }
 
 void fillArray(char * field, char a, char b, char c) {
