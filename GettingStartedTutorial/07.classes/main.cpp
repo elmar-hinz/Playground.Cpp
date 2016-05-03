@@ -23,7 +23,7 @@ class Rect {
 		void setDimensions(int x, int y) {
 			this->x = x; this->y = y;
 		}
-		
+
 		int area() {
 			return x * y;
 		}
@@ -39,8 +39,36 @@ class Rect {
 
 int Rect::c = 0;
 
-
 int main() {
+
+	cout << endl << "Create Element:" << endl;
+	Rect rect = Rect(2,2);
+	cout << "Expected 4: " << rect.area() << endl;
+
+	cout << endl << "Create Pointer with new:" << endl;
+	Rect* rectPointer = new Rect(2,2);
+	cout << "Expected 4: " << rectPointer->area() << endl;
+	cout << "Expected 4: " << (*rectPointer).area() << endl;
+
+	cout << endl << "Create array of elements:" << endl;
+	cout << "Name is pointer to first element:" << endl;
+	Rect rectA[] = { Rect(2,2), Rect(4,4) };
+	cout << "Expected 4: " << rectA->area() << endl;
+	cout << "Expected 16: " << rectA[1].area() << endl;
+
+	cout << endl << "Create array of pointers:" << endl;
+	cout << "Name is pointer to pointer:" << endl;
+	Rect* rectPA[] = {new Rect(2,2), new Rect(4,4)};
+	cout << "Expected 4: " << (**rectPA).area() << endl;
+	cout << "Expected 4: " << (*rectPA)->area() << endl;
+	cout << "Expected 16: " << rectPA[1]->area() << endl;
+
+	cout << endl << "Create array of elements with pointer to first" << endl;
+	Rect* rectAP = new Rect[2];
+	rectAP->setDimensions(2,2);
+	(rectAP + 1)->setDimensions(3,3);
+	cout << "Expected 4: " << rectAP->area() << endl;
+	cout << "Expected 9: " << rectAP[1].area() << endl;
 
 	cout << endl << "Overloading Constructors:" << endl;
 	Rect rect1 = Rect();
@@ -48,16 +76,16 @@ int main() {
 	cout << "Expected 1: " << rect1.area() << endl;
 	cout << "Expected 6: " << rect2.area() << endl;
 
-	cout << endl << "By pointer:" << endl;
+	cout << endl << "Copy by value:" << endl;
+    Rect rect3 = rect1;
+    rect3.setDimensions(3,4);
+	cout << "Expected 12: " << rect3.area() << endl;
+	cout << "Expected 1: " << rect1.area() << endl;
+
+	cout << endl << "Reference by pointer:" << endl;
 	Rect* rectP = &rect1;
 	cout << "Expected 1: " << rectP->area() << endl;
-
-	cout << endl << "Array:" << endl;
-	Rect* rectA = new Rect[2]; 
-	rectA->setDimensions(2,2); 
-	(rectA + 1)->setDimensions(3,3); 
-	cout << "Expected 4: " << rectA->area() << endl;
-	cout << "Expected 9: " << rectA[1].area() << endl;
+	cout << "Expected 1: " << (*rectP).area() << endl;
 
 	cout << endl << "Opertor *:" << endl;
 	Rect doubled = rect1 * 2;

@@ -28,15 +28,15 @@ int main() {
 	(new Cow())->walk();
 	(new Duck())->walk();
 
-	cout << endl <<  "Variables cast to animal:" << endl;
+	cout << endl <<  "Variables cast to animal (speak):" << endl;
 	Animal animals[] = { *new Cow(), *new Duck(), *new Animal() };
 	for(int x=0; x <3; x++) { animals[x].speak(); }
 
-	cout << endl << "Pointers allow polimorphism:" << endl;
+	cout << endl << "Pointers allow polimorphism (speak):" << endl;
 	Animal* speakers[] = { new Cow(), new Duck() };
 	for(int x=0; x <2; x++) { speakers[x]->speak(); }
 
-	cout << endl << "Without virtual pointers don't help:" << endl;
+	cout << endl << "Without virtual pointers don't help (walk):" << endl;
 	Animal* walkers[] = { new Cow(), new Duck() };
 	for(int x=0; x <2; x++) { walkers[x]->walk(); }
 }
