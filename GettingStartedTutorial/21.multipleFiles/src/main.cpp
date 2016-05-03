@@ -1,11 +1,11 @@
 #include <iostream>
-#include "counter/counter.cpp"
+#include "counter.h"
 
 using namespace std;
 
 int main()
 {
-    cout << greet("Elmar") << endl;
+    greet("Elmar");
     Counter * counter = new Counter();
     counter->increment();
     counter->decrement();

@@ -1,31 +1,28 @@
 #include <iostream>
+#include "counter.h"
 
 using namespace std;
 
-string hello = "Hello ";
-
-string greet(string name)
+void Counter::increment()
 {
-    return hello + name;
+    count++;
 }
 
-class Counter {
-    int count = 0;
+void Counter::decrement()
+{
+    count--;
+}
 
-    public:
-    void increment()
-    {
-        count++;
-    }
+int Counter::result()
+{
+    return count;
+}
 
-    void decrement()
-    {
-        count--;
-    }
+string hello = "Ola";
 
-    int result()
-    {
-        return count;
-    }
-};
+void greet(std::string name)
+{
+    cout << hello <<" " << name << "!" << endl;
+}
+
 

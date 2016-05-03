@@ -48,10 +48,10 @@ RM = /Users/ElmarHinz/Homebrew/Cellar/cmake/3.5.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ElmarHinz/Work/Learn/Playground.Cpp/GettingStartedTutorial/21.multipleFiles
+CMAKE_SOURCE_DIR = /Volumes/Work/Learn/Playground.Cpp/GettingStartedTutorial/21.multipleFiles/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ElmarHinz/Work/Learn/Playground.Cpp/GettingStartedTutorial/21.multipleFiles
+CMAKE_BINARY_DIR = /Volumes/Work/Learn/Playground.Cpp/GettingStartedTutorial/21.multipleFiles/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ElmarHinz/Work/Learn/Playground.Cpp/GettingStartedTutorial/21.multipleFiles/CMakeFiles /Users/ElmarHinz/Work/Learn/Playground.Cpp/GettingStartedTutorial/21.multipleFiles/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Work/Learn/Playground.Cpp/GettingStartedTutorial/21.multipleFiles/build/CMakeFiles /Volumes/Work/Learn/Playground.Cpp/GettingStartedTutorial/21.multipleFiles/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ElmarHinz/Work/Learn/Playground.Cpp/GettingStartedTutorial/21.multipleFiles/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Work/Learn/Playground.Cpp/GettingStartedTutorial/21.multipleFiles/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named counter
-
-# Build rule for target.
-counter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 counter
-.PHONY : counter
-
-# fast build rule for target.
-counter/fast:
-	$(MAKE) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/build
-.PHONY : counter/fast
-
-#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -136,59 +123,72 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-src/counter/counter.o: src/counter/counter.cpp.o
+#=============================================================================
+# Target rules for targets named counter
 
-.PHONY : src/counter/counter.o
+# Build rule for target.
+counter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 counter
+.PHONY : counter
 
-# target to build an object file
-src/counter/counter.cpp.o:
-	$(MAKE) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/src/counter/counter.cpp.o
-.PHONY : src/counter/counter.cpp.o
+# fast build rule for target.
+counter/fast:
+	$(MAKE) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/build
+.PHONY : counter/fast
 
-src/counter/counter.i: src/counter/counter.cpp.i
+counter/counter.o: counter/counter.cpp.o
 
-.PHONY : src/counter/counter.i
-
-# target to preprocess a source file
-src/counter/counter.cpp.i:
-	$(MAKE) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/src/counter/counter.cpp.i
-.PHONY : src/counter/counter.cpp.i
-
-src/counter/counter.s: src/counter/counter.cpp.s
-
-.PHONY : src/counter/counter.s
-
-# target to generate assembly for a file
-src/counter/counter.cpp.s:
-	$(MAKE) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/src/counter/counter.cpp.s
-.PHONY : src/counter/counter.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
+.PHONY : counter/counter.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+counter/counter.cpp.o:
+	$(MAKE) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/counter/counter.cpp.o
+.PHONY : counter/counter.cpp.o
 
-src/main.i: src/main.cpp.i
+counter/counter.i: counter/counter.cpp.i
 
-.PHONY : src/main.i
+.PHONY : counter/counter.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+counter/counter.cpp.i:
+	$(MAKE) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/counter/counter.cpp.i
+.PHONY : counter/counter.cpp.i
 
-src/main.s: src/main.cpp.s
+counter/counter.s: counter/counter.cpp.s
 
-.PHONY : src/main.s
+.PHONY : counter/counter.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+counter/counter.cpp.s:
+	$(MAKE) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/counter/counter.cpp.s
+.PHONY : counter/counter.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -198,14 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... counter"
 	@echo "... main"
-	@echo "... src/counter/counter.o"
-	@echo "... src/counter/counter.i"
-	@echo "... src/counter/counter.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... counter"
+	@echo "... counter/counter.o"
+	@echo "... counter/counter.i"
+	@echo "... counter/counter.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
