@@ -8,7 +8,7 @@ add_definitions(-std=c++11)
 add_library(counter counter/counter.cpp)
 
 # Find counter library headers
-include_directories ("${PROJECT_SOURCE_DIR}/counter")
+include_directories ("counter")
 
 # Build the executable
 add_executable(main main.cpp)
