@@ -1,0 +1,21 @@
+
+# CC and CFLAGS are predifined.
+# The can be overridden.
+#
+# CC=gcc
+# CFLAGS=-I.
+
+run: main
+	./main2
+
+main:
+	$(CC) $(CFLAGS) -o main2 main.c hello.c
+
+clean:
+	rm -f main2
+
+test:
+	@echo "CC:" $(CC)
+	@echo "CFLAGS:" $(CFLAGS)
+	@echo "NOTHING:" $(NOTHING)
+

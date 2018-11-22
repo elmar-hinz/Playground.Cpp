@@ -1,0 +1,23 @@
+Build started at 2017-08-17T17:03:36.870139
+Python binary: /Users/ElmarHinz/Homebrew/opt/python3/bin/python3.6
+Python system: Darwin
+The Meson build system
+Version: 0.42.0
+Source dir: /Volumes/Work/Learn/Playground.Cpp/GettingStartedWithMeson/1.hello/src
+Build dir: /Volumes/Work/Learn/Playground.Cpp/GettingStartedWithMeson/1.hello/build
+Build type: native build
+Project name: Hello world
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /Volumes/Work/Learn/Playground.Cpp/GettingStartedWithMeson/1.hello/build/meson-private/sanitycheckc.c -o /Volumes/Work/Learn/Playground.Cpp/GettingStartedWithMeson/1.hello/build/meson-private/sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /Volumes/Work/Learn/Playground.Cpp/GettingStartedWithMeson/1.hello/build/meson-private/sanitycheckc.exe
+Native C compiler: cc (clang 8.1.0)
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Build targets in project: 1

@@ -1,0 +1,4 @@
+/Volumes/Work/Learn/Playground.Cpp/GettingStartedWithCMake/3.install/build/bin/Tutorial
+/Volumes/Work/Learn/Playground.Cpp/GettingStartedWithCMake/3.install/build/include/TutorialConfig.h
+/Volumes/Work/Learn/Playground.Cpp/GettingStartedWithCMake/3.install/build/lib/libMathFunctions.a
+/Volumes/Work/Learn/Playground.Cpp/GettingStartedWithCMake/3.install/build/include/MathFunctions.h

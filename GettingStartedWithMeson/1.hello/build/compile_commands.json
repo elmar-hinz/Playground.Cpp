@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "/Volumes/Work/Learn/Playground.Cpp/GettingStartedWithMeson/1.hello/build",
+    "command": "cc  -Ihello@exe -I. -I../src -Xclang -fcolor-diagnostics -pipe -Wall -Winvalid-pch -O0 -g -MMD -MQ 'hello@exe/hello.c.o' -MF 'hello@exe/hello.c.o.d' -o 'hello@exe/hello.c.o' -c ../src/hello.c",
+    "file": "../src/hello.c"
+  }
+]

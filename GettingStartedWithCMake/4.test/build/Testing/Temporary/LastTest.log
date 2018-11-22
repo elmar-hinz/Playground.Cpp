@@ -1,0 +1,29 @@
+Start testing: Aug 17 13:47 CEST
+----------------------------------------------------------
+1/1 Testing: TutorialRuns
+1/1 Test: TutorialRuns
+Command: "/Volumes/Work/Learn/Playground.Cpp/GettingStartedWithCMake/4.test/build/Tutorial" "25"
+Directory: /Volumes/Work/Learn/Playground.Cpp/GettingStartedWithCMake/4.test/build
+"TutorialRuns" start time: Aug 17 13:47 CEST
+Output:
+----------------------------------------------------------
+Computing sqrt of 25 to be 13
+Computing sqrt of 25 to be 7.46154
+Computing sqrt of 25 to be 5.40603
+Computing sqrt of 25 to be 5.01525
+Computing sqrt of 25 to be 5.00002
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+The square root of 25 is 5
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TutorialRuns" end time: Aug 17 13:47 CEST
+"TutorialRuns" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 17 13:47 CEST

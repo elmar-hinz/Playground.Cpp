@@ -1,0 +1,14 @@
+
+CC=gcc
+CFLAGS=-I.
+
+run: main
+	./main3
+
+# Naming .o as depencencies compiles them first.
+main: main.o hello.o
+	$(CC) $(CFLAGS) -o main3 main.o hello.o
+
+clean:
+	rm -f *.o main3
+

@@ -1,0 +1,4 @@
+/Volumes/Work/Learn/Playground.Cpp/GettingStartedWithCMake/4.test/build/bin/Tutorial
+/Volumes/Work/Learn/Playground.Cpp/GettingStartedWithCMake/4.test/build/include/TutorialConfig.h
+/Volumes/Work/Learn/Playground.Cpp/GettingStartedWithCMake/4.test/build/lib/libMathFunctions.a
+/Volumes/Work/Learn/Playground.Cpp/GettingStartedWithCMake/4.test/build/include/MathFunctions.h

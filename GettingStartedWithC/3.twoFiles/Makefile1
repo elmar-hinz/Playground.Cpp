@@ -1,0 +1,6 @@
+
+run: main
+	./main1
+
+main:
+	gcc main.c hello.c -o main1
